@@ -6,10 +6,7 @@ load_dotenv()
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-restart_sequence = ""
-
 total_text = input('Please provide an opening line: ')
-
 
 while True:
   response = openai.Completion.create(
